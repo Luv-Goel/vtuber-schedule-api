@@ -1,23 +1,55 @@
-# Environment variables
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+venv/
+env/
+.venv/
 .env
 .env.local
 .env.*.local
-
-# API keys (never commit these!)
-api_key
-secret
-config.json
 
 # IDE
 .vscode/
 .idea/
 *.swp
 *.swo
+*~
 
 # OS
 .DS_Store
 Thumbs.db
+Desktop.ini
 
 # Logs
 *.log
 npm-debug.log*
+
+# API keys / secrets
+api_key
+secret
+config.json
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+
+# FastAPI / uvicorn
+*.pid
+
+# Redis / cache
+dump.rdb
+
+# Project specific
+output/
+temp_media/
+cache/
